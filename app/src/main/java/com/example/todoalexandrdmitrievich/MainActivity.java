@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         viewModel = new ViewModelProvider(this).get(MainViewModel.class);
         binding.addTask.setOnClickListener(v -> {
             String taskText = binding.taskInput.getText().toString();
-            if(taskText != "") {
+            if(!taskText.equals("")) {
                 viewModel.addTask(taskText);
             }
         });

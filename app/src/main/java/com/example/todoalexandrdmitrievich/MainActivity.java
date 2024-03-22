@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<String> todos = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        //Это главный экран в приложении
         super.onCreate(savedInstanceState);
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
